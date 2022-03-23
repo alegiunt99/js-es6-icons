@@ -9,3 +9,26 @@
 
 
 /* CONTENT  */ 
+
+.icons-container{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: rgb(112 112 241);
+}
+
+.icon-box{
+    width: calc(100% / 5);
+    padding: 20px;
+    background-color: lightgray;
+    text-align: center;
+    border: 12px solid rgb(112 112 241);
+    border-radius: 20px;
+}
+
+.icon-box .fas {
+    font-size: 43px;
+    margin-bottom: 10px;
+}
