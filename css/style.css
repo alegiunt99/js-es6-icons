@@ -10,6 +10,20 @@
 
 /* CONTENT  */ 
 
+.options-container{
+    width: 90%;
+    margin: 40px auto;
+    background-color: rgb(255, 72, 72);
+    height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+}
+
+.options-container span {
+    color: white;
+}
+
 .icons-container{
     width: 90%;
     margin: 50px auto;
@@ -22,13 +36,19 @@
 .icon-box{
     width: calc(100% / 5);
     padding: 20px;
-    background-color: lightgray;
+    background-color: rgb(211, 211, 211);
     text-align: center;
     border: 12px solid rgb(112 112 241);
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.icon-box:hover{
+    background-color: rgba(156, 154, 154, 0.959);
 }
 
 .icon-box .fas {
     font-size: 43px;
     margin-bottom: 10px;
 }
+
