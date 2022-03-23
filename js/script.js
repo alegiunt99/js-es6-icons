@@ -25,7 +25,7 @@ const iconsGroup = [
 		color: 'orange'
     },
     
-    //
+    //corvo
 	{
 		name: 'crow',
 		prefix: 'fa-',
@@ -43,7 +43,7 @@ const iconsGroup = [
 		color: 'orange'
     },
     
-    //
+    //colomba
 	{
 		name: 'dove',
 		prefix: 'fa-',
@@ -155,3 +155,21 @@ const iconsGroup = [
 	}
 ];
 
+
+console.table(iconsGroup);
+// prendo il container delle icone con la classe
+
+const iconsContainer = document.querySelector('.icons-container');
+
+
+// creo una box per ogni elemento
+
+iconsGroup.forEach(icon => {
+    
+    // creo una box per ogni elemento
+    const IconBoxes = createIconBox(icon);
+
+    // aggiungo il box di ogni elemento al container
+    iconsContainer.appendChild(IconBoxes);
+})
+    
