@@ -173,27 +173,28 @@ iconsGroup.forEach(icon => {
     iconsContainer.appendChild(IconBoxes);
 })
 
+// prendo tutti gli elementi divisi per tipo
+
+const animalsBox = document.querySelectorAll('.icon-box.animal')
+
+console.log(animalsBox);
+
+const vegetablesBox = document.querySelectorAll('.icon-box.vegetable')
+
+console.log(vegetablesBox);
+
+const usersBox = document.querySelectorAll('.icon-box.user')
+
+console.log(usersBox);
 
 // prendo il tag del select dove aggiungero le opzioni
 
-const optionsSelect = document.querySelector('#icons-types');
+const optionAll = document.getElementById('all-d-block')
 
-// creo 3 array, uno per ogni tipo (user, vegetable, animal)
+const optionAnimal = document.getElementById('animal-d-block')
 
-// array animali
+const optionVeg = document.getElementById('veget-d-block')
 
-const animalsGroup = iconsGroup.filter(icon => icon.type === 'animal')
-
-console.log('il gruppo di ANIMALI è:', animalsGroup);
+const optionUser = document.getElementById('user-d-block')
 
 
-// VEGETALI
-const vegetablesGroup = iconsGroup.filter(icons => icons.type === 'vegetable')
-
-console.log('il gruppo di VEGETALI è:', vegetablesGroup);
-
-
-// USER 
-const usersGroup = iconsGroup.filter(elements => elements.type === 'user')
-
-console.log('il gruppo di USER è:', usersGroup);

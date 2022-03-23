@@ -3,6 +3,8 @@ function createIconBox(element) {
     const IconBox = document.createElement('div');
     IconBox.className = "icon-box";
 
+    IconBox.classList.add(`${element.type}`);
+
     IconBox.innerHTML =`
         <div id="icon">
             <i class="${element.family} ${element.prefix}${element.name}" style="color: ${element.color};"></i>
