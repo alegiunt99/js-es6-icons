@@ -189,12 +189,25 @@ console.log(usersBox);
 
 // prendo il tag del select dove aggiungero le opzioni
 
+const dropdown = document.getElementById("icons-types").value;
+
+console.log(dropdown);
+
+
 const optionAll = document.getElementById('all-d-block')
+
 
 const optionAnimal = document.getElementById('animal-d-block')
 
+console.log(optionAnimal.value);
 const optionVeg = document.getElementById('veget-d-block')
 
 const optionUser = document.getElementById('user-d-block')
 
+function myFunction() {
+    
+}
 
+// aggiungo un evento a ogni opzione cliccata
+
+// if(dropdown.value === )
